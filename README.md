@@ -3,7 +3,9 @@ Implementation of MUNGE algorithm [1] in Python.
 
 Assumes all attributes are continuous and linearly scaled to [0, 1]. #TODO
 
-`swaProb` and `varParam` should be selected carefully.
+`swapProb` and `varParam` should be selected carefully.
+
+Combinations of different features can be tried easily.
 
 ![original_data](/original.png)
 ![synthetic_data](/synthetic.png)

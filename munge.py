@@ -29,8 +29,6 @@ def munge( dataset, sizeMultiplier, swapProb, varParam):
     12th ACMSIGKDD International Conference on Knowledge Discovery and Data Mining, KDD
     ’06, pages 535–541, New York, NY, USA, 2006. ACM.
     
-    
-    
     Creates a synthetic dataset.
     Continuous attributes should be linearly scaled to [0, 1].
     For now, assumes all attributes are continuous and the dataset is 2D. #TODO
@@ -69,7 +67,6 @@ def munge( dataset, sizeMultiplier, swapProb, varParam):
 
 
 X, y = datasets.load_wine(return_X_y=True)
-
 # we will work on these features
 flavanoids = X[:, 6]
 proline = X[:, 12]
@@ -83,6 +80,7 @@ plt.xlabel('Flavanoids')
 plt.ylabel('Proline')
 plt.title('Original Data')
 plt.show()
+
 
 
 features = np.stack( (flavanoids, proline), axis=1)
